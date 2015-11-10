@@ -1,0 +1,29 @@
+lines -> lines line
+
+line -> ; 
+	| expr ';' 
+	| VAR expr '=' expr ';' 
+	| PRINT expr ';' 
+	| INPUT VAR ';'
+	| IF '(' expr ')' expr 
+	| IF '(' expr ')' expr ELSE expr
+	| WHILE '(' epxr ')' line
+	| '{' lines '}'
+
+expr -> INT 
+	| VAR 
+	| '-' expr 
+	| expr LSHIFT INT
+	| expr RSHIFT INT
+	| expr POW expr 
+	| expr '+' expr 
+	| expr '-' expr 
+	| expr '*' expr 
+	| expr '/' expr 
+	| expr '<' expr 
+	| expr LE epxr 
+	| expr '>' expr 
+	| expr GE expr 
+	| expr EQ expr 
+	| expr NE epxr 
+	| '(' expr ')'

@@ -1,0 +1,5 @@
+(spim) load "prog2.s"
+(spim) run
+Input: 100
+2500
+2550

@@ -1,0 +1,13 @@
+input n;
+a = 0;
+o = 0;
+e = 0;
+while (a <= n) {
+	if ((a&1) == 1)
+		o = o + a;
+	else
+		e = e + a;
+	a = a + 1;
+}
+print o;
+print e;

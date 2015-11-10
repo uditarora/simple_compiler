@@ -1,0 +1,5 @@
+(spim) load "prog1.s"
+(spim) run
+Input: 42
+26
+-168
